@@ -1,0 +1,12 @@
+from mcp.server.fastmcp import FastMCP
+
+mcp = FastMCP("Weather")
+
+@mcp.tool()
+async def get_weather(city: str) -> str:
+    """Get the weather for a city"""
+    print(f"Getting weather for {city}")
+    return f"The weather in {city} is sunny"
+
+if __name__ == "__main__":
+    mcp.run(transport="streamable-http")
