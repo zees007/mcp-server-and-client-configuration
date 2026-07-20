@@ -2,6 +2,8 @@
 
 A hands-on project demonstrating how to build and connect **Model Context Protocol (MCP)** servers with an AI-powered client using **LangChain** and **LangGraph**. This project showcases two different MCP transport mechanisms — **stdio** and **streamable HTTP** — wired together through a unified **ReAct agent**.
 
+> **💡 Note:** This is a **reference implementation** focused on showing how to configure and connect MCP servers to a client. The weather server returns dummy data — in a real-world scenario, you would integrate it with a weather API (e.g., [OpenWeatherMap](https://openweathermap.org/api), [WeatherAPI](https://www.weatherapi.com/), or [Tomorrow.io](https://www.tomorrow.io/)) to fetch live weather information.
+
 ---
 
 ## 📐 Architecture
@@ -164,6 +166,8 @@ Runs as a **standalone HTTP server**. Must be started separately before the clie
 |---------------|----------------------------------|------------------------------------------|
 | `get_weather` | Get weather for a given city     | `get_weather("Tokyo")` → `"The weather in Tokyo is sunny"` |
 
+> **🌐 Real-World Integration:** The current weather server returns hardcoded dummy responses. To get real weather data, you can easily extend the `get_weather` tool by integrating any weather API (such as OpenWeatherMap, WeatherAPI, or Tomorrow.io). Simply make an HTTP request inside the tool function and return the actual weather data — the MCP server/client architecture remains exactly the same.
+
 ---
 
 ## 🧠 How the Client Works
@@ -211,3 +215,35 @@ agent = create_react_agent(model, tools)
 ## 📄 License
 
 This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+<h1 align="center">❤️ Support & Engagement ❤️</h1>
+
+<p align="center">
+If you find this project helpful, please consider supporting it in the following ways:
+</p>
+
+⭐ If you find this project helpful, please give it a **star** on [GitHub](https://github.com/zees007/mcp-server-and-client-configuration)!
+
+⭐ If you find this article informative and beneficial, please consider showing your appreciation by giving it a clap 👏👏👏, highlight it and replying on my story. Feel free to share this article with your peers. Your support and knowledge sharing within the developer community are highly valued.
+
+⭐ Please share on social media
+
+⭐ Follow me on: [Medium](https://medium.com/@mhmdzeeshan) || [LinkedIn](https://www.linkedin.com/in/zeeshan-adil-a94b3867/) || [X (Formerly Twitter)](https://x.com/DevZeesCraft)
+
+⭐ Check out my work, projects, and more on my [Linktree](https://linktr.ee/zees007)
+
+⭐ [Check out my other articles on Medium](https://medium.com/@mhmdzeeshan)
+
+⭐ [Subscribe to my newsletter 📧](https://medium.com/@mhmdzeeshan/subscribe), so that you don't miss out on my latest articles.
+
+⭐ If you enjoyed my article, please consider [buying me a coffee ❤️](https://buymeacoffee.com/mhmdzeeshan) and stay tuned to more articles about Java, technologies and AI. 🧑‍💻
+
+---
+
+## 👨‍💻 Author
+
+**Zeeshan**
+
+🌍 Full-stack AI Developer | Python | Java | Spring Boot | Flutter | Agentic AI | RAG | LangChain | Generative AI
